@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giao điểm lịch sử (1976 - nay)</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700;900&family=Inter:wght@300;400;600&family=Public+Sans:wght@300;500;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Serif:wght@100..900&family=Public+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#dbdadb",
+                        "primary": "#094cb2",
+                        "primary-container": "#3366cc",
+                        "tertiary-fixed": "#f9e37a",
+                        "on-background": "#1b1c1d",
+                        "on-primary-container": "#e7ebff",
+                        "tertiary-container": "#bfab49",
+                        "on-error-container": "#93000a",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#dfe3e8",
+                        "primary-fixed": "#d9e2ff",
+                        "on-secondary-fixed-variant": "#42474b",
+                        "on-tertiary-fixed": "#211b00",
+                        "surface": "#faf9fa",
+                        "on-tertiary-fixed-variant": "#524600",
+                        "secondary-fixed-dim": "#c2c7cc",
+                        "outline-variant": "#c3c6d5",
+                        "on-tertiary-container": "#4a3f00",
+                        "secondary-container": "#dfe3e8",
+                        "outline": "#737784",
+                        "on-primary-fixed-variant": "#00419d",
+                        "inverse-on-surface": "#f2f0f1",
+                        "on-error": "#ffffff",
+                        "background": "#faf9fa",
+                        "on-surface": "#1b1c1d",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#faf9fa",
+                        "surface-container-highest": "#e3e2e3",
+                        "primary-fixed-dim": "#b1c5ff",
+                        "on-secondary-fixed": "#171c20",
+                        "tertiary": "#6d5e00",
+                        "on-primary-fixed": "#001946",
+                        "surface-tint": "#2259bf",
+                        "secondary": "#5a5f63",
+                        "on-surface-variant": "#434653",
+                        "on-primary": "#ffffff",
+                        "surface-container-high": "#e9e8e9",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#dcc661",
+                        "inverse-primary": "#b1c5ff",
+                        "error": "#ba1a1a",
+                        "surface-container-low": "#f5f3f4",
+                        "surface-container": "#efedee",
+                        "inverse-surface": "#303031",
+                        "surface-variant": "#e3e2e3",
+                        "archival-gold": "#dcc661",
+                        "heritage-red": "#4a0404"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "display": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Public Sans"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body {
+            background: radial-gradient(circle at top, #7a0808 0%, #4a0404 100%);
+            color: #faf9fa;
+            font-family: 'Inter', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Noto Serif', serif;
+            color: #f9e37a; /* tertiary-fixed */
+        }
+        .timeline-line {
+            width: 2px;
+            background: linear-gradient(to bottom, transparent, #f9e37a, #f9e37a, transparent);
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+        }
+        .glow-node {
+            box-shadow: 0 0 15px #f9e37a;
+        }
+        .editorial-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(249, 227, 122, 0.1);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .editorial-card:hover {
+            background: rgba(255, 255, 255, 0.07);
+            border-color: rgba(249, 227, 122, 0.3);
+            transform: translateY(-4px);
+        }
+        .sticky-header {
+            background: rgba(74, 4, 4, 0.85);
+            backdrop-filter: blur(20px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- Minimalist Header -->
+<header class="fixed top-0 w-full z-50 py-6 px-8 flex justify-between items-center sticky-header">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl">menu_book</span>
+<h1 class="font-headline font-black text-xl tracking-tighter text-white">THE SCHOLARLY RECORD</h1>
+</div>
+<div class="serif-title font-bold text-sm tracking-widest uppercase">Giao điểm lịch sử</div>
+</header>
+<main class="relative pt-32 pb-32 max-w-2xl mx-auto px-6">
+<!-- Background Ambient Effect -->
+<div class="fixed inset-0 pointer-events-none opacity-20 overflow-hidden">
+<div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] bg-primary rounded-full mix-blend-soft-light blur-[120px]"></div>
+<div class="absolute -bottom-1/4 -left-1/4 w-[600px] h-[600px] bg-tertiary rounded-full mix-blend-soft-light blur-[100px]"></div>
+</div>
+<!-- Introduction Section -->
+<section class="text-center mb-24 relative z-10">
+<h2 class="serif-title text-5xl md:text-6xl font-black mb-6 leading-tight">1976 — NAY</h2>
+<p class="font-label text-surface-dim/70 tracking-widest uppercase text-xs mb-8">Kỷ nguyên phát triển & Hội nhập</p>
+<div class="w-12 h-[1px] bg-tertiary-fixed mx-auto"></div>
+</section>
+<!-- Timeline Container -->
+<div class="relative">
+<div class="timeline-line"></div>
+<!-- PHASE 1 -->
+<div class="relative mb-24">
+<div class="flex flex-col items-center mb-10">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed glow-node z-10 mb-4 border-4 border-heritage-red"></div>
+<span class="font-label text-tertiary-fixed text-xs font-bold tracking-widest uppercase">Giai đoạn 1</span>
+<h3 class="serif-title text-2xl font-bold mt-2 text-center">Tái thiết & Định hình<br/>(1975 - 1985)</h3>
+</div>
+<div class="space-y-8 relative z-10">
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1976</span>
+<span class="material-symbols-outlined text-tertiary-fixed">location_city</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Thành phố mang tên Bác</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Sài Gòn chính thức được đổi tên thành Thành phố Hồ Chí Minh, đánh dấu một chương mới đầy khát vọng cho đầu tàu kinh tế phía Nam.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1981</span>
+<span class="material-symbols-outlined text-tertiary-fixed">oil_barrel</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Vietsovpetro & Biển Đông</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body mb-4">Liên doanh dầu khí Vietsovpetro ra đời tại Bà Rịa - Vũng Tàu, khởi đầu cho nền công nghiệp năng lượng hiện đại.</p>
+<img class="w-full h-40 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A cinematic, high-end editorial image of an offshore oil rig in the Vung Tau sea at dawn. The lighting is warm and golden, reflecting off the dark blue water. The style is prestigious and atmospheric, utilizing a deep red and archival gold color palette to match a historical heritage theme. The composition is wide and dramatic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFYHRL3d3v54ckSSRgFM7IJ8yEilvmph9BTc66n3TWpEeytVrtqWMcKhlAnzd_k0aJsSIfV_5_iDx-fYd2hXL4w3YX6u5NPWrhh4bV-gpuUUL1RUM5Uv03H99qe5S4aQytvVJvN6LtZNNSlS83gNDGzeCwU_ir68ObMBoUiDqSPekP1Pde0lRFVgpXhic-VfB2X4HHrYAf7LiAJQN875ZyXsLDJQiMQ-XLhoAv5l8SrlXuw8m6dfzutzCqvTE7Ncq1hwNTHRJW5K4K"/>
+</div>
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1981</span>
+<span class="material-symbols-outlined text-tertiary-fixed">agriculture</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Phục hồi Nông nghiệp Bình Dương</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Những nỗ lực phục hồi sau chiến tranh, biến vùng đất bazan thành thủ phủ cao su và cây công nghiệp mũi nhọn.</p>
+</div>
+</div>
+</div>
+<!-- PHASE 2 -->
+<div class="relative mb-24">
+<div class="flex flex-col items-center mb-10">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed glow-node z-10 mb-4 border-4 border-heritage-red"></div>
+<span class="font-label text-tertiary-fixed text-xs font-bold tracking-widest uppercase">Giai đoạn 2</span>
+<h3 class="serif-title text-2xl font-bold mt-2 text-center">Đổi mới & Mở cửa<br/>(1986 - 2000)</h3>
+</div>
+<div class="space-y-8 relative z-10">
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1991</span>
+<span class="material-symbols-outlined text-tertiary-fixed">foundation</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Thành lập tỉnh Bà Rịa - Vung Tau</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Tách khỏi Đặc khu Vũng Tàu - Côn Đảo để hình thành một tỉnh kinh tế biển năng động bậc nhất Đông Nam Bộ.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1991</span>
+<span class="material-symbols-outlined text-tertiary-fixed">precision_manufacturing</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Khu Chế Xuất Tân Thuận</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Khu chế xuất đầu tiên của Việt Nam được thành lập, mở ra cánh cửa đón dòng vốn FDI và công nghệ quốc tế.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">1996</span>
+<span class="material-symbols-outlined text-tertiary-fixed">handshake</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">VSIP I - Biểu tượng Hợp tác</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body mb-4">Khu công nghiệp Việt Nam - Singapore đầu tiên tại Bình Dương, khởi đầu cho mô hình khu công nghiệp xanh và hiện đại.</p>
+<img class="w-full h-40 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A minimalist and prestigious architectural photography of the entrance of an industrial park. The image shows clean lines, a clear sky, and manicured green landscapes. The visual style is premium editorial, featuring high-contrast lighting and a subtle color palette of deep reds and archival golds. The mood is professional and forward-thinking." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA90EoOPhdOX5KzKeTcv1ERL5GftSEDj5i0r-VEnV7qLezV4hVDavC26I-7ebhhqJBITfcDJxvWFVL9m8yNPa2l3FuSmtbrG8-LOLXnZYU86PaeOBSm_WrzGybsmIHTtnceQTdmrzt4nmeEqdFazWH8oLVuZ_9bgdC_kNq7Sna3pOXttxTJ32pQnWl8UAcJponDXxmg3sIZhjUoB6CbpOrlovZJsr4FvVhnWkCopuArJ-ym82kgpj2VyOOtf4jDPKImZeoLVMRP1e2I"/>
+</div>
+</div>
+</div>
+<!-- PHASE 3 -->
+<div class="relative mb-24">
+<div class="flex flex-col items-center mb-10">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed glow-node z-10 mb-4 border-4 border-heritage-red"></div>
+<span class="font-label text-tertiary-fixed text-xs font-bold tracking-widest uppercase">Giai đoạn 3</span>
+<h3 class="serif-title text-2xl font-bold mt-2 text-center">Công nghiệp hóa & Đô thị hóa<br/>(2001 - 2015)</h3>
+</div>
+<div class="space-y-8 relative z-10">
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2003</span>
+<span class="material-symbols-outlined text-tertiary-fixed">memory</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">SHTP - Thung lũng công nghệ</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Khu Công nghệ cao TP.HCM đón nhận các tập đoàn khổng lồ như Intel, định vị thành phố trên bản đồ công nghệ thế giới.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2011</span>
+<span class="material-symbols-outlined text-tertiary-fixed">engineering</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Hầm Thủ Thiêm & Đại lộ Đông Tây</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body mb-4">Hầm vượt sông Sài Gòn hiện đại nhất Đông Nam Á, kết nối lịch sử với tương lai mới của bán đảo Thủ Thiêm.</p>
+<img class="w-full h-40 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="An artistic nighttime photography of the Thu Thiem Tunnel entrance in Ho Chi Minh City. Long exposure lights of cars create golden and red streaks. The background shows the city skyline with a prestigious, scholarly mood. Tonal layering of deep reds and blacks defines the edges. Cinematic and high-end feel." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-qTnlnMjbMIwQ_9XKVuekuendISIpPhLNwEX4KEkT5riBFa4JIJrOhj314SU_1UfE9itcWnCCjpvjB7vmWKQ4OwnJCJPpjE8PwZEHGpOzs0IThDDJp93jFOMmgDUevjMPoGXkEEfe4WpwVyM5BQQ7bdpBrkLMOYaY6D-_okfq3ElulXDpJlsyNPlnjrdyghE6HeZ4Lk9MThIyQCdUeQgpE_a0KvigBKXtAkIPPW-xwWX0J--o81zn1nh2iAYULmrk8P9YO50tPL-h"/>
+</div>
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2014</span>
+<span class="material-symbols-outlined text-tertiary-fixed">apartment</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Thành phố mới Bình Dương</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Khánh thành Trung tâm Hành chính tập trung, đặt nền móng cho một đô thị thông minh và bền vững.</p>
+</div>
+</div>
+</div>
+<!-- PHASE 4 -->
+<div class="relative mb-24">
+<div class="flex flex-col items-center mb-10">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed glow-node z-10 mb-4 border-4 border-heritage-red"></div>
+<span class="font-label text-tertiary-fixed text-xs font-bold tracking-widest uppercase">Giai đoạn 4</span>
+<h3 class="serif-title text-2xl font-bold mt-2 text-center">Liên kết Vùng & Kinh tế số<br/>(2016 - nay)</h3>
+</div>
+<div class="space-y-8 relative z-10">
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2020</span>
+<span class="material-symbols-outlined text-tertiary-fixed">hub</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Thành lập Thành phố Thủ Đức</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Mô hình "Thành phố trong Thành phố" đầu tiên, hạt nhân thúc đẩy kinh tế tri thức cho khu vực phía Đông.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2024</span>
+<span class="material-symbols-outlined text-tertiary-fixed">schema</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Vành đai 3 & 4</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body">Xóa nhòa khoảng cách địa lý giữa các trung tâm kinh tế, tạo động lực liên kết vùng chưa từng có.</p>
+</div>
+<div class="editorial-card p-6 rounded-xl overflow-hidden group">
+<div class="flex justify-between items-start mb-4">
+<span class="font-headline text-3xl font-black text-tertiary-fixed/40 italic">2026</span>
+<span class="material-symbols-outlined text-tertiary-fixed">flight_takeoff</span>
+</div>
+<h4 class="font-headline text-lg font-bold text-white mb-2">Siêu sân bay Long Thành</h4>
+<p class="text-surface-dim text-sm leading-relaxed font-body mb-4">Dự án trọng điểm quốc gia, đưa Đông Nam Bộ trở thành trung tâm giao thương quốc tế của khu vực.</p>
+<img class="w-full h-40 object-cover rounded-lg opacity-80 group-hover:opacity-100 transition-opacity" data-alt="A futuristic architectural rendering of a massive, modern airport terminal. The design is sleek with curved glass and steel structures. The lighting is high-key with soft golden sunset hues. The overall aesthetic is clean, prestigious, and cinematic, emphasizing progress and connectivity in a deep red and gold heritage context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD592vtP4Pb_VfnklqUrxu_xS8_wb1-ksZX4_GY0v-lncjppi6YV7Qe-Umevmq_pqMyePVT84oBuhoSaW3JbDSN9flFmMqZ8grcR5fkDAX5bVmD_Q1Xhb5a8mL-fZcysncRLc5e8KajguNlByPImuz70AHpCpOT-a2HaSdNVpVx33sSL2orpawnd2VAgT3cWdzs25ueNcOUXXo4Rk-Efa2FGBkRiZUQJb55OMw6z8D2YqGahB6-px0Ebh30z0_UnplcP1s9qniQcw8y"/>
+</div>
+</div>
+</div>
+<!-- FUTURE VISION -->
+<div class="relative pt-12">
+<div class="flex flex-col items-center mb-10">
+<div class="w-8 h-8 rounded-full bg-white flex items-center justify-center z-10 mb-4 border-4 border-tertiary-fixed">
+<span class="material-symbols-outlined text-heritage-red text-lg" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label text-tertiary-fixed text-xs font-bold tracking-widest uppercase">Tầm nhìn tương lai</span>
+<h3 class="serif-title text-3xl md:text-4xl font-black mt-2 text-center">30.06.2025</h3>
+</div>
+<div class="editorial-card p-8 rounded-2xl relative z-10 border-2 border-tertiary-fixed/30 bg-gradient-to-br from-tertiary-fixed/10 to-transparent">
+<p class="font-headline text-xl text-white text-center leading-relaxed italic">"Một siêu đô thị kết nối hoàn chỉnh giữa TP.HCM, Bình Dương và Bà Rịa - Vũng Tàu — Trái tim phồn vinh của Việt Nam vươn tầm quốc tế."</p>
+<div class="mt-8 flex justify-center gap-4">
+<button class="bg-gradient-to-r from-primary to-primary-container text-white font-label font-bold py-3 px-8 rounded-full text-xs tracking-widest uppercase shadow-xl hover:scale-105 transition-transform active:scale-95">Khám phá tiếp</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Scroll Indicator -->
+<div class="fixed bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-tertiary-fixed/50 animate-bounce pointer-events-none">
+<span class="text-[10px] font-label tracking-widest uppercase">Cuộn để xem</span>
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+<!-- Decorative Corner Elements -->
+<div class="fixed top-0 left-0 w-32 h-32 pointer-events-none opacity-40">
+<div class="absolute top-8 left-8 w-16 h-[1px] bg-tertiary-fixed"></div>
+<div class="absolute top-8 left-8 w-[1px] h-16 bg-tertiary-fixed"></div>
+</div>
+<div class="fixed bottom-0 right-0 w-32 h-32 pointer-events-none opacity-40">
+<div class="absolute bottom-8 right-8 w-16 h-[1px] bg-tertiary-fixed"></div>
+<div class="absolute bottom-8 right-8 w-[1px] h-16 bg-tertiary-fixed"></div>
+</div>
+<script>
+        // Intersection Observer for Scroll Animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.editorial-card').forEach(card => {
+            card.classList.add('opacity-0', 'translate-y-10', 'transition-all', 'duration-1000');
+            observer.observe(card);
+        });
+
+        // Simple Parallax for the background line
+        window.addEventListener('scroll', () => {
+            const line = document.querySelector('.timeline-line');
+            const scrolled = window.pageYOffset;
+            line.style.backgroundPosition = `0 ${scrolled * 0.5}px`;
+        });
+    </script>
+</body></html>

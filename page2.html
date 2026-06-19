@@ -133,22 +133,28 @@
                 transform: translateY(-10px);
             }
         }
+
+        .text-content p::first-letter {
+            font-size: 8vw;
+            font-weight: 700;
+            margin: 1vw 1vw 1vw 0;
+        }
     </style>
 </head>
 
 <body class="bg-background text-on-surface selection:bg-primary/20 antialiased">
-    <main class="py-12 md:py-20 px-6 max-w-screen-xl mx-auto space-y-12">
+    <main class="py-12 md:py-20 px-6 mx-auto space-y-12">
         <!-- Header Section -->
         <header class="text-center space-y-6 max-w-4xl mx-auto">
-            <h1 class="text-3xl md:text-5xl font-bold tracking-tight text-primary leading-tight">
+            <h1 class="md:text-5xl font-bold tracking-tight text-primary leading-tight" style="font-size: 5vw;">
                 Đột phá tư duy – khởi nguồn đổi mới
             </h1>
             <div class="h-1.5 w-20 bg-primary-container mx-auto rounded-full"></div>
         </header>
         <!-- Content Section -->
-        <section class="max-w-3xl mx-auto">
-            <p
-                class="text-body-md md:text-lg text-on-surface-variant leading-relaxed text-justify first-letter:text-5xl first-letter:font-bold first-letter:text-primary first-letter:mr-3 first-letter:float-left">
+        <section class="mx-auto text-content" style="width: 90%;">
+            <p style="font-size: 3vw; line-height: 3vw;"
+                class="text-body-md md:text-lg text-on-surface-variant leading-relaxed text-justify first-letter:font-bold first-letter:text-primary first-letter:float-left">
                 Những bước ngoặt đột phá tư duy hay còn được gọi là "Xé rào" tại Thành phố Hồ Chí Minh giai đoạn cuối
                 thập niên 70, đầu thập niên 80 là những quyết sách dũng cảm, đi trước thời đại nhằm phá vỡ sự kìm hãm
                 của cơ chế bao cấp lỗi thời. Bắt đầu từ những hành động thực tiễn như: "Xé rào" trong lương thực để cứu
@@ -161,6 +167,7 @@
             </p>
         </section>
         <!-- Visual Storytelling Carousel -->
+
         <section class="relative group overflow-hidden">
             <div class="flex overflow-x-auto snap-x snap-mandatory scroll-smooth hide-scrollbar gap-6 pb-8"
                 id="carousel">
@@ -281,12 +288,138 @@
 
     </div>
 
-
     <script>
         const carousel = document.getElementById('carousel');
         const dots = document.querySelectorAll('.indicator-dot');
         const originalSlides = Array.from(carousel.querySelectorAll('.carousel-slide'));
         const slideCount = originalSlides.length;
+        let autoPlayInterval;
+        const AUTO_PLAY_DELAY = 10000;
+
+        // Clone slides for infinite effect
+        originalSlides.forEach(slide => {
+            const clone = slide.cloneNode(true);
+            carousel.appendChild(clone);
+        });
+        originalSlides.reverse().forEach(slide => {
+            const clone = slide.cloneNode(true);
+            carousel.insertBefore(clone, carousel.firstChild);
+        });
+
+        let isJumping = false;
+        let scrollTimeout;
+
+        const getActiveIndex = () => {
+            const scrollPosition = carousel.scrollLeft;
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth + 24;
+            let index = Math.round(scrollPosition / slideWidth) % slideCount;
+            if (index < 0) index += slideCount;
+            return index;
+        };
+
+        const updateUI = () => {
+            const activeIndex = getActiveIndex();
+            dots.forEach((dot, index) => {
+                if (index === activeIndex) {
+                    dot.classList.add('bg-primary/40', 'w-6');
+                    dot.classList.remove('bg-outline-variant', 'w-1.5');
+                } else {
+                    dot.classList.remove('bg-primary/40', 'w-6');
+                    dot.classList.add('bg-outline-variant', 'w-1.5');
+                }
+            });
+        };
+
+        const handleInfiniteScroll = () => {
+            if (isJumping) return;
+
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth + 24;
+            const currentScroll = carousel.scrollLeft;
+
+            if (currentScroll <= slideWidth * 0.5) {
+                isJumping = true;
+                carousel.classList.remove('scroll-smooth');
+                carousel.scrollLeft = slideWidth * slideCount;
+                setTimeout(() => {
+                    carousel.classList.add('scroll-smooth');
+                    isJumping = false;
+                }, 50);
+            } else if (currentScroll >= slideWidth * (slideCount * 2 - 0.5)) {
+                isJumping = true;
+                carousel.classList.remove('scroll-smooth');
+                carousel.scrollLeft = slideWidth * slideCount;
+                setTimeout(() => {
+                    carousel.classList.add('scroll-smooth');
+                    isJumping = false;
+                }, 50);
+            }
+        };
+
+        const nextSlide = () => {
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth + 24;
+            const currentScroll = carousel.scrollLeft;
+            const currentBaseIndex = Math.round(currentScroll / slideWidth);
+
+            carousel.scrollTo({
+                left: (currentBaseIndex + 1) * slideWidth,
+                behavior: 'smooth'
+            });
+        };
+
+        const startAutoPlay = () => {
+            stopAutoPlay();
+            autoPlayInterval = setInterval(nextSlide, AUTO_PLAY_DELAY);
+        };
+
+        const stopAutoPlay = () => {
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
+            }
+        };
+
+        carousel.addEventListener('scroll', () => {
+            updateUI();
+            clearTimeout(scrollTimeout);
+            scrollTimeout = setTimeout(handleInfiniteScroll, 100);
+        });
+
+        // Pause on interaction
+        carousel.addEventListener('touchstart', stopAutoPlay);
+        carousel.addEventListener('mousedown', stopAutoPlay);
+
+        // Resume after interaction
+        carousel.addEventListener('touchend', startAutoPlay);
+        carousel.addEventListener('mouseup', startAutoPlay);
+        // Intersection Observer could also be used to pause when off-screen, but let's stick to direct interaction for now.
+
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                stopAutoPlay();
+                const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth + 24;
+                carousel.scrollTo({
+                    left: (slideCount + index) * slideWidth,
+                    behavior: 'smooth'
+                });
+                startAutoPlay();
+            });
+        });
+
+        window.addEventListener('load', () => {
+            const slideWidth = carousel.querySelector('.carousel-slide').offsetWidth + 24;
+            carousel.classList.remove('scroll-smooth');
+            carousel.scrollLeft = slideWidth * slideCount;
+            carousel.classList.add('scroll-smooth');
+            startAutoPlay();
+        });
+    </script>
+
+    <!-- <script>
+        const carousel = document.getElementById('carousel');
+        const dots = document.querySelectorAll('.indicator-dot');
+        const originalSlides = Array.from(carousel.querySelectorAll('.carousel-slide'));
+        const slideCount = originalSlides.length;
+        let autoPlayInterval;
+        const AUTO_PLAY_DELAY = 10000;
 
         // Clone slides for infinite effect
         // We clone all slides to the end and all slides to the beginning to ensure smooth wrapping
@@ -383,7 +516,7 @@
             carousel.scrollLeft = slideWidth * slideCount;
             carousel.classList.add('scroll-smooth');
         });
-    </script>
+    </script> -->
 </body>
 
 </html>

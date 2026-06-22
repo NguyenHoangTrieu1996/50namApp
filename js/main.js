@@ -5,11 +5,11 @@ const loaded = {
         index: true,
         page1: false,
         page2: false,
-        page3: true,
+        page3: false,
     },
     datas: {
         page2: false,
-        page3: true
+        page3: false
     }
 };
 
@@ -52,10 +52,9 @@ function afterRender(scope) {
         document.querySelector('#lang-vi, #lang-eng')?.setAttribute('id', lang);
         document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
         document.querySelectorAll(`.${lang}`).forEach(el => el.style.display = 'block');
-        document.querySelectorAll(`.${lang}-inline`).forEach(el => el.style.display = 'inline');
     }
     if (scope === 'page1') initAnimations?.();
-    if (scope === 'page2') window.initCarousel?.();
+    if (scope === 'page2'||'page3') window.initCarousel?.();
 }
 
 // Animation Page1

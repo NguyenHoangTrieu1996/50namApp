@@ -135,7 +135,7 @@
 
 </head>
 
-<body>
+<body id="lang-vi">
     <!-- Loader -->
     <div id="loader" class="loader hidden">
         <div class="dot"></div>
@@ -148,6 +148,33 @@
     <div id="app">
     </div>
 
+    <script>
+         function changeLang() {
+            const vietnamese = document.getElementById("lang-vi");
+            const english = document.getElementById("lang-eng");
+            if (vietnamese) {
+                vietnamese.id = "lang-eng"
+                // Ẩn tất cả các phần tử ngôn ngữ
+                document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+                // Hiển thị ngôn ngữ tiếng anh
+                document.querySelectorAll('.lang-eng').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.lang-eng-inline').forEach(el => el.style.display = 'inline');
+                // Lưu ngôn ngữ đã chọn vào localStorage
+                localStorage.setItem('language', 'lang-eng')
+            }
+            if (english) {
+                english.id = "lang-vi"
+
+                // Ẩn tất cả các phần tử ngôn ngữ
+                document.querySelectorAll('.lang').forEach(el => el.style.display = 'none');
+                // Hiển thị ngôn ngữ việt nam
+                document.querySelectorAll('.lang-vi').forEach(el => el.style.display = 'block');
+                document.querySelectorAll('.lang-vi-inline').forEach(el => el.style.display = 'inline');
+                // Lưu ngôn ngữ đã chọn vào localStorage
+                localStorage.setItem('language', 'lang-vi')
+            }
+        }
+    </script>
     <script src="./pages/index.js"></script>
     <script src="./js/carousel/innitCarousel.js"></script>
     <script src="./js/main.js"></script>

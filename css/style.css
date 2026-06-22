@@ -113,11 +113,12 @@ body {
     scrollbar-width: none;
 }
 
-.text-content p::first-letter {
+.text-content p:nth-child(1)::first-letter, .text-content p:nth-child(4)::first-letter{
     font-size: 8vw;
     font-weight: 700;
     margin: 1vw 1vw 1vw 0;
 }
+.text-content p{margin-bottom:1vw;}
 
 /* Loader */
 .loader {

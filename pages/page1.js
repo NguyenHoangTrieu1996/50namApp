@@ -16,8 +16,13 @@ window.Pages.page1 = function () {
             <header class="text-center mb-[5vw] transition-all duration-1000 ease-out opacity-100 translate-y-0"
                 id="hero-title">
                 <h1
-                    class="font-headline text-[7vw] font-bold text-gold-light mb-[2vw] gold-glow tracking-tight" style="line-height:0.8;">
+                    class="lang lang-vi uppercase font-headline text-[7vw] font-bold text-gold-light mb-[2vw] gold-glow tracking-tight" style="line-height:0.8;">
                     Giao điểm lịch sử<br>
+                    <span class="text-[4vw]  font-light text-gold/80">(1976 — nay)</span>
+                </h1>
+                  <h1
+                    class="lang lang-eng hidden uppercase font-headline text-[7vw] font-bold text-gold-light mb-[2vw] gold-glow tracking-tight" style="line-height:0.8;">
+                    The historical intersection<br>
                     <span class="text-[4vw]  font-light text-gold/80">(1976 — nay)</span>
                 </h1>
                 <div class="w-[10vw] h-[0.8vw] bg-gold mx-auto rounded-full"></div>
@@ -409,17 +414,31 @@ window.Pages.page1 = function () {
         </div>
         
         <!-- Back -->
-        <div style=" animation: jumpBack 2s infinite ease-in-out;"
-            class="fixed top-0 left-0 w-full z-50 flex justify-center py-12 pointer-events-none"
-            onclick="window.history.go(-1)">
-            <div class="absolute left-6 top-1/2 -translate-y-1/2 pointer-events-auto">
-                <button
-                    class="flex items-center gap-2 px-4 py-2 rounded-full border border-gold/20 bg-deep-red/40 backdrop-blur-md text-gold hover:bg-gold/10 transition-all group">
-                    <span class="material-symbols-outlined text-xl">arrow_back</span>
-                    <span class="font-label font-bold text-sm uppercase tracking-wider">Quay lại</span>
-                </button>
-            </div>
+    <div style="animation: jumpBack 2s infinite ease-in-out;"
+        class="fixed bottom-0 left-0 w-full py-[4vw] pointer-events-none" onclick="window.history.go(-1)">
+
+        <div class="absolute left-[1.5vw] top-1/2 -translate-y-1/2 pointer-events-auto">
+            <button
+                class="flex items-center gap-[0.6vw] px-[2.4vw] py-[1.2vw] rounded-full border border-gold/20 bg-deep-red/40 backdrop-blur-md text-gold hover:bg-gold/10 transition-all group">
+                <span class="material-symbols-outlined text-[2.4vw]">
+                    arrow_back
+                </span>
+                <span class="lang lang-vi font-label font-bold text-[1.8vw] uppercase tracking-wider">
+                    Quay lại
+                </span>
+                <span class="lang lang-eng hidden font-label font-bold text-[1.8vw] uppercase tracking-wider">
+                    Back
+                </span>
+            </button>
         </div>
+    </div>
+    <!-- Changelang -->
+    <div class="fixed bottom-[2vw] right-[2vw]" w-full>
+        <button onclick="changeLang()"
+            class="bg-deep-red\/40 px-[2.4vw] py-[1.2vw] rounded-full flex items-center space-x-[1.66vw] active-scale border border-white/20"><span
+                class="material-symbols-outlined !text-[2.4vw] text-gold/80">language</span><span
+                class="font-label font-bold  text-[1.8vw] text-gold/80 uppercase tracking-wider">VN | EN</span></button>
+    </div>
     </section>
     `;
 };

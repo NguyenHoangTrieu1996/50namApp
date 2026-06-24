@@ -35,8 +35,12 @@ window.Pages.page1 = function () {
                 <section class="mb-[10vw] relative">
                     <div class="flex items-center mb-[5vw] md:justify-center">
                         <div
-                            class="bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            class="lang lang-vi bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
                             Giai đoạn Tái thiết &amp; Định hình (1975 - 1985)
+                        </div>
+                        <div
+                            class="lang lang-eng hidden bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            The period of reconstruction & foundation (1976 - 1985)
                         </div>
                     </div>
                     <!-- 1976 -->
@@ -51,10 +55,12 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1976</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành phố mang tên
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành phố mang tên
                                     Bác
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Sài Gòn - Gia Định chính
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Sai Gon - Gia Dinh City was officially renamed Ho Chi Minh City.
+                                </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Sài Gòn - Gia Định chính
                                     thức
                                     được
                                     đổi tên thành Thành phố Hồ Chí Minh, đánh dấu chương mới trong sự nghiệp kiến thiết
@@ -69,10 +75,12 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1981</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Vietsovpetro &amp;
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Vietsovpetro &amp;
                                     Biển
                                     Đông</h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Vietsovpetro được thành
+                                    <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The establishment of the Vietsovpetro Joint Venture in Vung Tau laid the foundation for Vietnam’s oil and gas industry
+                                    </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Vietsovpetro được thành
                                     lập
                                     tại
                                     Vũng Tàu, đặt nền móng cho ngành công nghiệp dầu khí trọng điểm quốc gia.</p>
@@ -97,11 +105,13 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1976-1985</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Phục hồi Nông nghiệp
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Phục hồi Nông nghiệp
                                     Bình
                                     Dương (Sông Bé cũ)
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Tập trung phục hồi nông
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">•	Binh Duong (formerly Song Be): Focused on agricultural recovery and the revitalization of traditional craft villages (ceramics, lacquerware)
+                                </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Tập trung phục hồi nông
                                     nghiệp
                                     và các làng nghề truyền thống (gốm sứ, sơn mài)</p>
                             </div>
@@ -113,8 +123,12 @@ window.Pages.page1 = function () {
                 <section class="mb-[10vw] relative">
                     <div class="flex items-center mb-[5vw] md:justify-center">
                         <div
-                            class="bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            class="lang lang-vi bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
                             Giai đoạn Đổi mới &amp; Mở cửa (1986 - 2000)
+                        </div>
+                         <div
+                            class="lang lang-eng hidden bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            The period of renovation & opening up (1986 - 2000)
                         </div>
                     </div>
 
@@ -123,11 +137,13 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1991</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành lập tỉnh Bà Rịa
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành lập tỉnh Bà Rịa
                                     -
                                     Vũng Tàu
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập tỉnh Bà Rịa -
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Ba Ria - Vung Tau province was officially established (separated from the Vung Tau - Con Dao Special Zone and Dong Nai Province)
+                                </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập tỉnh Bà Rịa -
                                     Vũng
                                     Tàu (tách ra từ Đặc khu Vũng Tàu - Côn Đảo và tỉnh Đồng Nai).</p>
                             </div>
@@ -151,10 +167,12 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1991</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Khu Chế Xuất Tân
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Khu Chế Xuất Tân
                                     Thuận
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Khu chế xuất Tân
+                                 <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The establishment of the Tan Thuan Export Processing Zone (Ho Chi Minh City) - The nation's very first export processing zone
+                                </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Khu chế xuất Tân
                                     Thuận (TP.HCM) – Khu chế xuất đầu tiên của cả nước.</p>
                             </div>
                         </div>
@@ -165,10 +183,11 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1996</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">VSIP I - Biểu tượng
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">VSIP I - Biểu tượng
                                     Hợp
                                     tác</h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khánh thành Khu công
+                                     <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The inauguration of the VSIP Industrial Park I in Binh Duong - An icon of the modern industrial model, marking the beginning of the investment attraction era</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khánh thành Khu công
                                     nghiệp
                                     VSIP I tại Bình Dương – biểu tượng của mô hình công nghiệp hiện đại, bắt đầu thời kỳ
                                     mời
@@ -194,10 +213,12 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">1997</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Từ vùng đất Sông Bé
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Từ vùng đất Sông Bé
                                     đến
                                     trung tâm công nghiệp Bình Dương</h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Tỉnh Sông Bé chia tách
+                                     <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Song Be Province was divided into Binh Duong and Binh Phuoc provinces. Binh Duong entered a period of breakthrough industrial growth
+                                    tác</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Tỉnh Sông Bé chia tách
                                     thành
                                     Bình Dương và Bình Phước. Bình Dương bứt phá mạnh mẽ về công nghiệp.</p>
                             </div>
@@ -208,8 +229,12 @@ window.Pages.page1 = function () {
                 <section class="mb-[10vw] relative">
                     <div class="flex items-center mb-[5vw] md:justify-center">
                         <div
-                            class="bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            class="lang lang-vi bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
                             Giai đoạn Công nghiệp hóa &amp; Đô thị hóa (2001 - 2015)
+                        </div>
+                        <div
+                            class="lang lang-eng hidden bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            The period of Industrialization & urbanization (2001 - 2015)
                         </div>
                     </div>
 
@@ -218,9 +243,11 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2003</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thung lũng công nghệ
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thung lũng công nghệ
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Khu Công nghệ
+                                 <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The establishment of the Ho Chi Minh City Hi-Tech Park
+                                </h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Khu Công nghệ
                                     cao
                                     TP.HCM, thu hút các tập đoàn lớn như Intel.</p>
                             </div>
@@ -244,11 +271,12 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2009</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Hầm Thủ Thiêm & Đại
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Hầm Thủ Thiêm & Đại
                                     lộ
                                     Đông Tây
                                     Việt</h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khai trương Đại lộ Đông
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The opening of the East-West Highway, followed by the Thu Thiem tunnel (2011), revolutionizing Ho Chi Minh City’s infrastructure landscape</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khai trương Đại lộ Đông
                                     Tây và
                                     sau đó là Hầm Thủ Thiêm (2011), thay đổi diện mạo hạ tầng TP.HCM.</p>
                             </div>
@@ -260,9 +288,10 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2009</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Cửa ngõ Đại dương
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Cửa ngõ Đại dương
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Cảng quốc tế Cái Mép - Thị
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Cai Mep - Thi Vai International Port, becoming Vietnam's deepest international maritime gateway</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Cảng quốc tế Cái Mép - Thị
                                     Vải
                                     đón chuyến tàu mẹ đầu tiên, trở thành cửa ngõ hàng hải quốc tế sâu nhất Việt Nam.
                                 </p>
@@ -287,10 +316,11 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2014</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành phố mới Bình
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành phố mới Bình
                                     Dương
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Bình Dương khánh thành
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Binh Duong inaugurated its Centralized Administrative Center and officially launched Binh Duong New City</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Bình Dương khánh thành
                                     Trung
                                     tâm Hành chính tập trung và ra mắt Thành phố mới Bình Dương.</p>
                             </div>
@@ -303,8 +333,12 @@ window.Pages.page1 = function () {
                 <section class="relative">
                     <div class="flex items-center mb-[5vw] md:justify-center">
                         <div
-                            class="bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            class="lang lang-vi bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
                             Giai đoạn Liên kết Vùng &amp; Kinh tế số (2016 - nay)
+                        </div>
+                        <div
+                            class="lang lang-eng hidden bg-gold text-deep-red font-label font-black text-[1.8vw] uppercase px-[2vw] py-[1vw] rounded-full z-10 shadow-lg">
+                            The period of regional connectivity & the digital economy (2016 - Present)
                         </div>
                     </div>
 
@@ -313,10 +347,11 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2020</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành lập Thành phố
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Thành lập Thành phố
                                     Thủ
                                     Đức</h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Thành phố Thủ
+                                    <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">The establishment of Thu Duc City - The nation's first "City-within-a-city" model</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Thành lập Thành phố Thủ
                                     Đức –
                                     mô hình "thành phố trong thành phố" đầu tiên.</p>
                             </div>
@@ -341,11 +376,12 @@ window.Pages.page1 = function () {
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2021 - 2024
                                 </div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Kết nối Siêu hạ tầng
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Kết nối Siêu hạ tầng
                                     Vành
                                     đai 3 & 4
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khởi công các siêu dự án
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Groundbreaking of regional mega-connectivity projects, including Ring Road 3, Ring Road 4, and the Bien Hoa - Vung Tau Expressway</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Khởi công các siêu dự án
                                     kết
                                     nối vùng: Đường Vành đai 3, 4, cao tốc Biên Hòa - Vũng Tàu.</p>
                             </div>
@@ -357,13 +393,14 @@ window.Pages.page1 = function () {
                             <div
                                 class="glass-card p-[1.6vw] rounded-xl transition-all duration-700 ease-out opacity-100 translate-y-0">
                                 <div class="md:hidden text-gold-light font-headline text-3xl font-bold mb-2">2026</div>
-                                <h3 class="font-headline text-[2.6vw] text-white font-bold mb-2 italic">Siêu sân bay Long
+                                <h3 class="lang lang-vi font-headline text-[2.6vw] text-white font-bold mb-2 italic">Siêu sân bay Long
                                     Thành
                                 </h3>
-                                <p class="font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Hoàn thành giai đoạn 1 sân
+                                <h3 class="lang lang-eng hidden font-headline text-[2.6vw] text-white font-bold mb-2 italic">Completion of Phase 1 of Long Thanh International Airport (adjacent to the region) and smart seaport projects in Ba Ria - Vung Tau. Binh Duong: Became the first locality in Vietnam to be named in the Top 1 Intelligent Community of the Year (ICF)</h3>
+                                <p class="lang lang-vi font-body text-surface-dim leading-relaxed text-[2vw] text-justify" style="line-height:1.2; margin-bottom:1vw;">Hoàn thành giai đoạn 1 sân
                                     bay
                                     Long Thành (liền kề khu vực) và các dự án cảng biển thông minh tại Bà Rịa - Vũng
-                                    Tàu.
+                                    Tàu. Bình Dương: Trở thành địa phương đầu tiên của Việt Nam lọt vào Top 1 cộng đồng thông minh thế giới
                                 </p>
                             </div>
                         </div>
@@ -386,17 +423,23 @@ window.Pages.page1 = function () {
                                 class="absolute -right-10 -top-10 opacity-10 group-hover:rotate-12 transition-transform duration-700">
                                 <span class="material-symbols-outlined text-[120px] text-gold">hub</span>
                             </div>
-                            <div class="text-gold font-label font-black text-[2.2vw] tracking-widest uppercase mb-[0.8vw]">Tầm nhìn
+                            <div class=" lang lang-vi text-gold font-label font-black text-[2.2vw] tracking-widest uppercase mb-[0.8vw]">Tầm nhìn
                                 2025</div>
-                            <h2 class="font-headline text-[3.6vw] md:text-4xl font-bold text-gold-light mb-[1.2vw]">Đại hợp nhất
+                                <div class=" lang lang-eng hidden text-gold font-label font-black text-[2.2vw] tracking-widest uppercase mb-[0.8vw]">Vision
+                                2025</div>
+                            <h2 class="lang lang-vi font-headline text-[3.6vw] md:text-4xl font-bold text-gold-light mb-[1.2vw]">Đại hợp nhất
                                 Hành
                                 chính</h2>
-                            <p class="font-body text-gold/90 text-[2.2vw] leading-relaxed">
+                                <h2 class="lang lang-eng hidden font-headline text-[3.6vw] md:text-4xl font-bold text-gold-light mb-[1.2vw]">Great Administrative Consolidation</h2>
+                            <p class="lang lang-vi font-body text-gold/90 text-[2.2vw] leading-relaxed">
                                 <strong class="text-white">30/06/2025:</strong> Cột mốc lịch sử khi TP.HCM, Bình Dương
                                 và Bà
-                                Rịa - Vũng Tàu chính thức triển khai cơ chế hợp tác vùng đặc thù, tạo nên cực kinh tế
+                                Rịa - Vũng Tàu chính thức triển khai cơ chế sáp nhập, tạo nên nền kinh tế
                                 năng
                                 động nhất Đông Nam Á.
+                            </p>
+                            <p class="lang lang-eng hidden font-body text-gold/90 text-[2.2vw] leading-relaxed">
+                                <strong class="text-white">30/06/2025:</strong> A historic milestone marked the official implementation of the merger mechanism between Ho Chi Minh City, Binh Duong, and Ba Ria–Vung Tau, creating the most dynamic economic region in Southeast Asia.
                             </p>
                         </div>
                     </div>

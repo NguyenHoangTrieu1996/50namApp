@@ -41,7 +41,8 @@ window.Pages.page2 = function (datas) {
     `).join("") : "";
 
     return `
-    <section class="bg-background text-on-surface selection:bg-primary/20 antialiased h-screen overflow-hidden">
+    <section class="bg2 text-on-surface selection:bg-primary/20 antialiased h-screen overflow-hidden">
+      <div class="fixed inset-0 overlay pointer-events-none"></div>
         <main class="mx-auto flex flex-col h-screen w-screen">
             <!-- Header Section -->
             <div class="flex items-center justify-center mt-[2vw]" style="width: 100%;">

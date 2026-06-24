@@ -14,6 +14,10 @@ body {
     background: linear-gradient(to bottom, rgba(65, 0, 8, 0.4) 0%, rgba(65, 0, 8, 0.8) 100%);
 }
 
+.overlay {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.2) 60%, rgba(0, 0, 0, 0) 100%);
+}
+
 .glass-effect {
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(12px);
@@ -45,7 +49,11 @@ body {
 
 /* Page1 */
 .bg-page1 {
-    background: radial-gradient(circle at top, #7a0808 0%, #4a0404 100%);
+    background-image: url('../public/images/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: #F9E37A;
     font-family: 'Inter', sans-serif;
     scroll-behavior: smooth;
@@ -99,6 +107,15 @@ body {
 }
 
 /* Page2 */
+.bg2 {
+    background-image: url('../public/images/bg2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
@@ -113,12 +130,16 @@ body {
     scrollbar-width: none;
 }
 
-.text-content p:nth-child(1)::first-letter, .text-content p:nth-child(4)::first-letter{
+.text-content p:nth-child(1)::first-letter,
+.text-content p:nth-child(4)::first-letter {
     font-size: 8vw;
     font-weight: 700;
     margin: 1vw 1vw 1vw 0;
 }
-.text-content p{margin-bottom:1vw;}
+
+.text-content p {
+    margin-bottom: 1vw;
+}
 
 /* Loader */
 .loader {
@@ -167,4 +188,14 @@ body {
 
 .loader .dot:nth-child(5) {
     animation-delay: 0.5s;
+}
+
+/* Page3 */
+.bg3{
+    background-image: url('../public/images/bg3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
 }

@@ -3,6 +3,7 @@ window.Pages = window.Pages || {};
 window.Pages.page1 = function () {
     return `
       <section class="bg-page1 min-h-screen antialiased selection:bg-gold selection:text-deep-red">
+        <div class="fixed inset-0 overlay pointer-events-none"></div>
         <!-- Brand Logo Anchor -->
         <div class="flex items-center justify-center" style="width: 100%; padding: 2vw;">
             <img style="filter: brightness(0) invert(1);" width="20%" alt="Chronos Precision Logo"
@@ -451,9 +452,6 @@ window.Pages.page1 = function () {
             style="left: 43.5%;">
             <span class="text-[1.6vw] font-label tracking-widest uppercase">Cuộn để xem</span>
             <span class="material-symbols-outlined">expand_more</span>
-        </div>
-        <div
-            class="fixed bottom-0 left-0 w-full h-32 pointer-events-none bg-gradient-to-t from-deep-red to-transparent opacity-60">
         </div>
         
         <!-- Back -->

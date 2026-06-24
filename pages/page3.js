@@ -43,7 +43,8 @@ window.Pages.page3 = function (datas) {
         ></button>
     `).join("") : "";
     return `
-    <section class="bg-background text-on-surface selection:bg-primary/20 antialiased h-screen overflow-hidden">
+    <section class="bg3 text-on-surface selection:bg-primary/20 antialiased h-screen overflow-hidden">
+      <div class="fixed inset-0 overlay pointer-events-none"></div>
         <main class="mx-auto flex flex-col h-screen w-screen">
             <!-- Header Section -->
             <div class="flex items-center justify-center mt-[2vw]" style="width: 100%;">
@@ -52,10 +53,10 @@ window.Pages.page3 = function (datas) {
             </div>
             <header class="text-center max-[90%] mx-auto mt-[4vw] w-[90%]">
                 <h1 class="lang lang-vi uppercase text-[4.6vw] font-bold tracking-tight text-primary leading-tight" >
-                    Đột phá tư duy – khởi nguồn đổi mới
+                    Mở rộng đối ngoại – thu hút đầu tư
                 </h1>
                 <h1 class="lang lang-eng hidden uppercase text-[3.2vw] font-bold tracking-tight text-primary leading-tight" >
-                    Breakthrough thinking – The root of renovation
+                    Expanding foreign relations – attracting investment
                 </h1>
                 <div class="h-[1vw] w-[38vw] bg-primary-container mx-auto rounded-full mt-[1vw]"></div>
             </header>

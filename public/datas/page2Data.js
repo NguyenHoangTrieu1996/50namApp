@@ -76,11 +76,6 @@ window.datas.page2 = [
         desc2: "City youth performing irrigation work at Pham Van Coi New Economic Zone, Binh Chanh District, 1976."
     },
     {
-        img: "./public/images/page2/22.jpg",
-        desc1: "Đại đội Công binh tỉnh Sông Bé rà phá bom mìn, khắc phục hậu quả chiến tranh.",
-        desc2: "Song Be Provincial Engineer Company clears mines and bombs, overcoming the consequences of war."
-    },
-    {
         img: "./public/images/page2/23.jpg",
         desc1: "Lễ thông xe tuyến đường Nhà Bè - Duyên Hải nhân kỷ niệm 10 năm giải phóng Thành phố Hồ Chí Minh, ngày 28/4/1985.",
         desc2: "The opening ceremony of the Nha Be - Duyen Hai route marking the 10th anniversary of the Liberation of Ho Chi Minh City, April 28, 1985."
